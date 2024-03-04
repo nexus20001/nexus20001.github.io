@@ -656,14 +656,7 @@ function beep() {
   playInSpeaker(wave)
 }
 </script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-63957406-1', 'auto');
-  ga('send', 'pageview');
-</script></head>
+</head>
 <body bgcolor="#333" onload="initBasicEnvironment(); blastar()">
 <center>
 <h1>Blastar for HTML5</h1>
@@ -675,7 +668,7 @@ function beep() {
 <img src="img/blastar5.ico" id="sprite6" style="display: none">
 <img src="img/dragon.png" id="dragon" style="display: none">
 <div>
-<canvas height="600" width="750" id="canvas" style="width: 750px">[YOUR BROWSER IS NOT SUPPORTED]</canvas>
+<canvas height="600" width="100%" id="canvas" style="max-width: 750px">[YOUR BROWSER IS NOT SUPPORTED]</canvas>
 <br><audio id="speaker0">[Audio is not supported in your browser]</audio><audio id="speaker1"></audio>
 <label><input type="checkbox" id="muted" onclick="toggleMute(this)"> MUTE</label><br><br>
 </div>
