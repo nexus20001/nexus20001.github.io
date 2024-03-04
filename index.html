@@ -2,6 +2,11 @@
 <html>
 <head><title>Blastar | The HTML5 Game</title>
 <link rel="stylesheet" href="css/style.css">
+  <style>
+@media only screen (max-device-width : 768px) {
+    .game_div { display: none; } 
+}
+</style>
 <script>
 
 kEmptyIterationMillis = 4
@@ -658,6 +663,7 @@ function beep() {
 </script>
 </head>
 <body bgcolor="#333" onload="initBasicEnvironment(); blastar()">
+  <div class="game_div">
 <center>
 <h1>Blastar for HTML5</h1>
 <img src="img/blastar0.ico" id="sprite0" style="display: none">
@@ -690,4 +696,5 @@ Elon has since moved <a href="http://www.spacex.com">beyond 8-bit spaceships</a>
 <p style="font-size: 120%"><i>"[It was] a trivial game... but better than Flappy Bird."</i><br>
 --Elon Musk (via <a href="http://waitbutwhy.com/2015/05/elon-musk-the-worlds-raddest-man.html">WaitButWhy</a>)</p></div>
 </center>
+  </div>
 </body></html>
